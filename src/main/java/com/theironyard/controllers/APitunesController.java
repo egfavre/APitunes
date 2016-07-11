@@ -35,7 +35,7 @@ public class APitunesController {
     @PostConstruct
     public void init() throws SQLException, FileNotFoundException, PasswordStorage.CannotPerformOperationException {
         Server.createWebServer().start();
-        parseUsers("users.csv");
+        parseUsers("userList.csv");
 
     }
     public void parseUsers(String fileName) throws FileNotFoundException, PasswordStorage.CannotPerformOperationException {
