@@ -52,6 +52,7 @@ public class APitunesRestController {
         session.setAttribute("username", user.getUsername());
         return userFromDatabase;
     }
+
     @RequestMapping(path = "/userList", method = RequestMethod.GET)
     public List<Song> allSongs() {
 
